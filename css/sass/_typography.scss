@@ -10,6 +10,7 @@ p {
     color: $pink-normal;
     font-size: 24px;
     padding: 8px 8px;
+    line-height: 100%;
 
     transition: 0.5s ease;
 
@@ -44,17 +45,112 @@ p {
 
 h1{
     font-size: 80px;
+    color: $pink-normal;
+    line-height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    h1{
+        font-size: 64px;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+    
 }
 
 h2{
     font-size: 24px;
+    color: $black-mid;
+    line-height: 100%;
+
 }
 
 p{
     font-size: 24px;
+    line-height: 100%;
+    margin-top: 24px;
+
 }
 
 a {
     font-size: 24px;
     text-decoration: none;
+    line-height: 100%;
+
+}
+
+.mask {
+    display: inline-block;
+    background-color: linear-gradient(180deg, #FD87B1 0%, #FF99D0 100%);
+    -webkit-text-fill-color: transparent;
+}
+
+.buttons {
+    display: inline-block;
+    margin-top: 48px;
+
+    position: relative;
+}
+
+.Button-01 {
+    font-size: 24px;
+    color: $pink-light;
+    padding: 16px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 288px;
+        height: 80px;
+
+        background-color: pink;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+
+        border-radius: 40px;
+
+        transform: translate(-0, -20%);
+
+    }
+}
+
+.Button-02 {
+    font-size: 24px;
+    color: $pink-light;
+    padding: 16px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 288px;
+        height: 80px;
+
+        background-color: pink;
+
+        position: absolute;
+        top: 0;
+        left: 340px;
+
+        align-items: center;
+
+        z-index: -1;
+
+        border-radius: 40px;
+
+        transform: translate(-0, -20%);
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
