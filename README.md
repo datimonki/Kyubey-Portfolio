@@ -1,2 +1,2 @@
-# Kyubey-Portfolio
+# Kyubey-Portfolio [IN CONSTRUCTION]
  Portfolio of Satan himself in the land of Madoka Magika. Project developed for the FrontPush course, where I made some changes to suit the design.
